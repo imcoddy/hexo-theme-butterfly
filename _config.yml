@@ -6,14 +6,15 @@
 #   xxx || 連結 || icon
 menu:
   Home: / || fa fa-home
-  Archives: /archives/ || fa fa-archive
+  # Archives: /archives/ || fa fa-archive
   Tags: /tags/ || fa fa-tags
   Categories: /categories/ || fa fa-folder-open
-  Link: /link/ || fa fa-link
+  # Link: /link/ || fa fa-link
   About: /about/ || fa fa-heart
-  List||fa fa-list:
-    - Music || /music/ || fa fa-music
-    - Movie || /movies/ || fa fa-film
+  Rebirth: ../rebirth/ || fa fa-bitcoin
+  # List||fa fa-list:
+    # - Music || /music/ || fa fa-music
+    # - Movie || /movies/ || fa fa-film
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
@@ -29,7 +30,7 @@ menu:
 
 # Highlight theme
 # ---------------
-highlight_theme: light # default / darker / pale night / light / ocean
+highlight_theme: ocean # default / darker / pale night / light / ocean
 highlight_copy: true #代碼複製按鈕
 highlight_lang: true #代碼語言顯示
 highlight_shrink: false # true 全部代碼框不展開，需點擊 '>' 打開 / false 代碼框展開，有'>'點擊按鈕 | none 代碼框展開，不顯示 '>' 按鈕
@@ -48,9 +49,11 @@ copy:
 #   icon: link || the description
 # ---------------
 social:
-  fa fa-github: https://github.com/jerryc127 || Github
-  fa fa-envelope: mailto:xxxxxxx@gmail.com || Email
-  fa fa-rss: /atom.xml || RSS
+  fa fa-github: https://github.com/imcoddy || Github
+  # fa fa-envelope: mailto:xxxxxxx@gmail.com || Email
+  fa fa-twitter: https://www.twitter.com/imcoddy || Twitter
+  fa fa-weibo: https://www.weibo.com/imcoddy || Weibo
+  # fa fa-rss: /atom.xml || RSS
 
 ####    search    ####
 # Algolia search
@@ -102,19 +105,19 @@ mermaid:
 
 # Favicon
 # ---------------
-favicon: /img/favicon.png
+favicon: /images/favicon.png
 
 # Post info settings
 # ---------------
 avatar:
-  img: /img/avatar.png
+  img: /images/avatar.png
   effect: false # 頭像會一直轉圈
 
 # the banner image of index
 index_img:
 
 # if the banner of page not setting,it will show the top_img
-default_top_img: https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg
+default_top_img: https://www.aithority.com/wp-content/uploads/2019/06/The-Bitcoin-SV-Developers-Hackathon-3-Companies-Win-Direct-Investment.jpg
 
 # the banner image of archive page
 archive_img:
@@ -256,15 +259,15 @@ gitalk:
 
 # valine comment system. https://valine.js.org
 valine:
-  enable: false # if you want use valine,please set this value is true
-  appId: # leancloud application app id
-  appKey: # leancloud application app key
+  enable: true # if you want use valine,please set this value is true
+  appId: cOEhusjIvF2miHty5CGF9tXD-MdYXbMMI
+  appKey: Yzbo1Aw1oSMT6cjGi6nLe9k0
   notify: false # valine mail notify (true/false) Deprecated in v1.4.0+
   verify: false # valine verify code (true/false) Deprecated in v1.4.0+
   pageSize: 10 # comment list page size
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
-  lang: en # i18n: zh-CN/zh-TW/en/ja
-  placeholder: Please leave your footprints # valine comment input placeholder(like: Please leave your footprints )
+  lang: zh-CN # i18n: zh-CN/zh-TW/en/ja
+  placeholder: 看完本文你的感想如何呢？ # valine comment input placeholder(like: Please leave your footprints )
   guest_info: nick,mail,link #valine comment header info
   recordIP: false # Record reviewer IP
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
@@ -359,10 +362,10 @@ reward:
   enable: true
   QR_code:
     - itemlist:
-        img: /img/wechat.jpg
+        img: /images/reward/wechat.jpg
         text: 微信
     - itemlist:
-        img: /img/alipay.jpg
+        img: /images/reward/alipay.jpg
         text: 支付寶
 
 # 推薦文章
@@ -385,20 +388,20 @@ anchor: false
 # Theme color for customize
 # Notice: color value must in double quotes like "#000" or may cause error!
 # ---------------
-# theme_color:
-#   enable: true
-#   main: "#49B1F5"
-#   paginator: "#00c4b6"
-#   button_hover: "#FF7242"
-#   text_selection: "#00c4b6"
-#   link_color: "#99a9bf"
-#   meta_color: "#858585"
-#   hr_color: "#A4D8FA"
-#   code_foreground: "#F47466"
-#   code_background: "rgba(27, 31, 35, .05)"
-#   toc_color: "#00c4b6"
-#   blockquote_padding_color: "#49b1f5"
-#   blockquote_background_color: "#49b1f5"
+theme_color:
+  enable: true
+  main: "#e8b21f"
+  paginator: "#00c4b6"
+  button_hover: "#FF7242"
+  text_selection: "#00c4b6"
+  link_color: "#99a9bf"
+  meta_color: "#858585"
+  hr_color: "#e8b21f"
+  code_foreground: "#F47466"
+  code_background: "rgba(27, 31, 35, .05)"
+  toc_color: "#00c4b6"
+  blockquote_padding_color: "#49b1f5"
+  blockquote_background_color: "#e8b21f"
 
 # 主頁設置
 # 默認top_img全屏，site_info在中間
@@ -431,7 +434,7 @@ canvas_ribbon:
   size: 150
   alpha: 0.6
   zIndex: -1
-  click_to_change: false
+  click_to_change: true
   mobile: false # false 手機端不顯示 true 手機端顯示
 
 # 動態彩帶
@@ -463,7 +466,7 @@ fireworks:
 
 # 點擊出現愛心
 click_heart:
-  enable: false
+  enable: true
 
 # 點擊出現文字，文字可自行修改
 ClickShowText:
@@ -481,7 +484,7 @@ display_mode: light
 
 # 美化頁面顯示
 beautify:
-  enable: false
+  enable: true
   field: post # site/post
   title-prefix-icon: '\f0c1'
   title-prefix-icon-color: '#F47466'
@@ -510,7 +513,7 @@ subtitle:
   # 打字效果
   effect: true
   # 循環或者只打字一次
-  loop: false
+  loop: true
   # source調用第三方服務
   # source: false 關閉調用
   # source: 1  調用搏天api的隨機語錄（簡體） https://api.btstu.cn/
@@ -522,8 +525,8 @@ subtitle:
   # (如果有英文逗號' , '，請使用轉義字符 &#44;)
   # 如果關閉打字效果，subtitle只會顯示sub的第一行文字
   sub:
-    - 今日事&#44;今日畢
-    - Never put off till tomorrow what you can do today
+    - BitCoin 上拓天地
+    - MetaNet 里定乾坤
 
 # fontawesome圖標
 # 默認使用的是 fontawesome v4版本的圖標
@@ -545,7 +548,7 @@ aside:
     description:
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: Welcome to Metanet.Press
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
@@ -559,7 +562,7 @@ aside:
   card_archives:
     enable: true
     type: monthly # yearly or monthly
-    format: MMMM YYYY # eg: YYYY年MM月
+    format: YYYY-MM-DD # eg: YYYY年MM月
     order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
     limit: 8 # if set 0 will show all
   card_webinfo: true
@@ -631,7 +634,7 @@ fancybox:
 # position 彈窗位置
 # 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  enable: false
+  enable: true
   position: bottom-left
   bg_light: '#49b1f5' #light mode時彈窗背景
   bg_dark: '#2d3035' #dark mode時彈窗背景
