@@ -1,7 +1,7 @@
 if is_home()
-  - var top_img = theme.index_img || theme.default_top_img
+  - var top_img = theme.index_img || theme.default_top_img || page.img
 else if is_post()
-  - var top_img = page.top_img || page.cover || page.randomcover || theme.default_top_img
+  - var top_img = page.top_img || page.cover || page.img || page.randomcover || theme.default_top_img
 else if is_archive()
   - var top_img = theme.archive_img || theme.default_top_img
 else if is_tag()
@@ -9,7 +9,7 @@ else if is_tag()
 else if is_category()
   - var top_img = theme.category_img || theme.default_top_img
 else
-  - var top_img = page.top_img || theme.default_top_img
+  - var top_img = page.top_img || page.img || theme.default_top_img
 
 if theme.douban
   if is_current('/movies/', [strict])

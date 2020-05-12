@@ -4,6 +4,7 @@
 # sub-menu
 # xxx || icon:
 #   xxx || 連結 || icon
+language: zh-CN # en , zh-CN , zh-TW
 menu:
   Home: / || fa fa-home
   # Archives: /archives/ || fa fa-archive
@@ -117,7 +118,7 @@ avatar:
 index_img:
 
 # if the banner of page not setting,it will show the top_img
-default_top_img: https://www.aithority.com/wp-content/uploads/2019/06/The-Bitcoin-SV-Developers-Hackathon-3-Companies-Win-Direct-Investment.jpg
+default_top_img: '/img/bg.jpg'
 
 # the banner image of archive page
 archive_img:
@@ -306,7 +307,7 @@ since: 2020
 footer_custom_text:
 
 footer_copyright:
-  enable: true
+  enable: false
 
 ICP:
   enable: false
@@ -548,7 +549,7 @@ aside:
     description:
   card_announcement:
     enable: true
-    content: Welcome to Metanet.Press
+    content: 如果您是第一次访问本站，建议先到 https://metanet.press/rebirth/ 上了解「比特币重生计划」的来龙去脉，当然，也希望本公众号的历史文章能给您带来新的启发。如对本站有什么建议或意见，随时欢迎添加微信号 imcoddy 来联系我。希望 Metanet 的世界能因您的加入而更加精彩。
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all

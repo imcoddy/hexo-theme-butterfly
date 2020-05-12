@@ -4,7 +4,7 @@
   if theme.since && theme.since != nowYear
     .copyright!= `&copy;${theme.since} - ${nowYear} By ${config.author}`
   else
-    .copyright!= `&copy;${nowYear} By ${config.author}`
+    .copyright!= `&copy;${nowYear} ${config.title} All Rights Reserved.`
   if theme.footer_copyright.enable
     .framework-info
       span= _p('footer.driven') + ' '
